@@ -103,6 +103,9 @@ footer {
 .note{
 	font-size: small;
 }
+.large{
+	font-size: large;
+}
 .projectname {
 	display:inline-block;
 }
