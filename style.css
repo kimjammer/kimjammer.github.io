@@ -1,0 +1,124 @@
+/*Color Palette #FB8122 (Orange)  #1D2228 (Dark Gray)  #E1E2E2(Whitish Gray)*/
+* {
+	font-family: sans-serif;
+}
+body {
+	background-color:#FFFFFF;
+	padding:10px;
+	min-width: 200px;
+}
+header {
+	height:75px;
+	padding:10px 10px 10px 10px;
+	background-color: #1D2228 /*hsl(1, 0%, 90%)*/;
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+}
+nav {
+	display:inline-block;
+	position:relative;
+	bottom:30px;
+	margin-left:20px;
+}
+p {
+	font-family:Verdana,sans-serif;
+}
+li {
+	font-family: Verdana,sans-serif;
+}
+footer {
+	font-size:10px;
+}
+.logo {
+	width:75px;
+	height:75;
+	display:inline;
+}
+.navbutton {
+	display:inline-block;
+	padding:10px 10px;
+	margin:10px;
+	text-decoration: none;
+	border:solid #FB8122 2px;
+	background-color: #1D2228 ;
+	color:#FB8122;
+	transition:0.3s;
+}
+.navbutton:hover {
+	background-color: #FDD0AC;
+}
+.websitename {
+	display:inline;
+	font-family:Montserrat, sans-serif;
+	position:relative;
+	bottom:25px;
+	color:#E1E2E2;
+}
+.banner {
+	margin-top:100px;
+	background: black url(img/banner.jpg) center no-repeat;
+	height:500px;
+}
+.bannername {
+	font-family:Montserrat, sans-serif;
+	font-size:50px;
+	font-weight: bold;
+	color:#E1E2E2;
+	position:relative;
+	text-align: center;
+	/*all of this hullabaloo is to make the text element slightly bigger than the background, then blur everything behind it,*/
+	/*making the background and all of it's edges blurred.*/
+	top:-1%;
+	left:-1%;
+	height:102%;
+	width:102%;
+	-webkit-backdrop-filter: blur(3px);
+	backdrop-filter:blur(3px);
+	line-height:1000%;
+}
+.pagename{
+	font-size: 30px;
+	font-weight: normal;
+	margin-top:100px;
+}
+.content {
+	
+}
+.note{
+	font-size: small;
+}
+.projectname {
+	display:inline-block;
+}
+.projecticon {
+	width:50px;
+	height:50px;
+	position:relative;
+	top:13px;
+}
+.motto {
+	font-family:Montserrat, sans-serif;
+	color:#1D2228;
+	font-size: 40px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	width: auto;
+  	height: 177px;
+  	overflow: auto;
+}
+
+#mottoDiv{
+	display:table;
+	width: 100%;
+  	height: 177px;
+}
+#picMe{
+	display:inline;
+  	height: 177px;
+  	width: 100px;
+  	float: left;
+}
