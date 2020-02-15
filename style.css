@@ -59,14 +59,21 @@ footer {
 }
 .banner {
 	margin-top:100px;
-	background: black url(img/banner.jpg) center no-repeat;
 	height:500px;
+}
+.banner1{
+	background: black url(img/banner1.jpg) center no-repeat;
+}
+.banner2{
+	background: black url(img/banner2.jpg) center no-repeat;
+}
+.banner3{
+	background: black url(img/banner3.jpg) center no-repeat;
 }
 .bannername {
 	font-family:Montserrat, sans-serif;
 	font-size:50px;
 	font-weight: bold;
-	color:#E1E2E2;
 	position:relative;
 	text-align: center;
 	/*all of this hullabaloo is to make the text element slightly bigger than the background, then blur everything behind it,*/
@@ -78,6 +85,12 @@ footer {
 	-webkit-backdrop-filter: blur(3px);
 	backdrop-filter:blur(3px);
 	line-height:1000%;
+}
+.bannerdark{
+	color:#E1E2E2; /*this is light color, on dark banner*/
+}
+.bannerlight{
+	color:#1D2228; /*this is dark color, on light banner*/
 }
 .pagename{
 	font-size: 30px;
