@@ -1,6 +1,6 @@
-# John Kim's Portfolio
+# KimJammer's Github Pages
 
-Made By John Kim from scratch!
+Made By KimJammer!
 
 # Image Source and Credits
 
