@@ -1,0 +1,177 @@
+* {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*Largest size -  Big Desktop Monitors*/
+@media screen and (min-width: 1216px) {
+    .heading{
+        height:50vh;
+    }
+    h1{
+        font-size:100px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size:20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    .small{
+        font-size: 20px;
+    }
+}
+
+/*Smaller size, eg Laptops*/
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+    .heading{
+        height:50vh;
+    }
+    h1 {
+        font-size: 100px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size:20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    .small{
+        font-size: 20px;
+    }
+}
+
+/*Tablet Size*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .heading{
+        height:50vh;
+    }
+    h1 {
+        font-size: 100px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size:20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    .small{
+        font-size: 20px;
+    }
+}
+
+/*Mobile size*/
+@media screen and (max-width: 425px) {
+    .heading{
+        height:300px;
+    }
+    h1 {
+        font-size: 70px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+      font-size:15px;
+    }
+    li{
+        font-size: 15px;
+    }
+    .small{
+        font-size: 15px;
+    }
+}
+
+.heading{
+    background-image: url("img/heading.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-attachment: fixed; /*Create parralax effect with image*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: Montserrat;
+    color:#e1e2e2;
+    text-align: center;
+    margin:0;
+}
+
+h2{
+    font-family: Montserrat;
+    color: #FB8122;
+    margin: 0px 0px 10px 0px;
+}
+
+p{
+    font-family: Manrope, sans-serif;
+}
+
+ol{
+    list-style: none;
+    counter-reset: how-list-counter;
+}
+
+ol li {
+    counter-increment: how-list-counter;
+}
+
+li {
+    font-family: Manrope, sans-serif;
+    color: #e1e2e2;
+    /*There is a font family styling in the html for the bold one because the bold tag overrides an inherited style apparently*/
+}
+
+ol li::before {
+    content: counter(how-list-counter) ". ";
+    color: #FB8122;
+}
+
+.small{
+    display: inline;
+    color: #FB8122;
+}
+
+.emphasize{
+    color: #FB8122;
+}
+
+.section{
+    background-color: #1D2228;
+    color: #e1e2e2;
+    padding:10px 10px 10px 10px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content {
+    padding-bottom: 2.5em;    /* Footer height */
+}
+
+.footer-txt{
+    font-size: 12px;
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    height:2.5em; /* Footer height*/
+    width:100%;
+}

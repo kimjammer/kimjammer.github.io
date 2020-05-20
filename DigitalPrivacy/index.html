@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital Privacy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*Preloader CSS. This is here for faster preloader loading times*/
+        .loader-wrapper{
+            width:100%;
+            height:100%;
+            z-index: 9999;
+            position:fixed;
+            left:0;
+            top: 0;
+            background-color: #111111;
+            box-sizing: border-box;
+            margin: 0 0 0 0;
+        }
+        .loader {
+            background: #fb8122;
+            height: 3em;
+            width: 3em;
+            margin: 50vh auto;
+            animation: loadit 4s linear infinite;
+        }
+
+        .loader-text{
+            color:#fb8122;
+            text-align:center;
+            font-family:sans-serif;
+            margin: auto;
+            width:100%;
+            top:10px;
+            position: fixed;
+            display:block;
+        }
+
+        @keyframes loadit {
+            55% {
+                background: rgba(251,129,34,0.4);
+                border-radius: 100%;
+                transform: rotate(360deg);
+                box-shadow: 7em 0 0 rgba(251,129,34,0.3),-7em 0 0 rgba(251,129,34,0.3),3em 0 0 rgba(251,129,34,0.3),-3em 0 0 rgba(251,129,34,0.3),0 7em 0 rgba(251,129,34,0.3),0 -7em 0 rgba(251,129,34,0.3),0 3em 0 rgba(251,129,34,0.3),0 -3em 0 rgba(251,129,34,0.3);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--So you are looking at the code for the website? Cool!-->
+    <!--If you want to see more awesome projects by me, John Kim, go to kimjammer.github.io for my portfolio!-->
+    <div class="loader-wrapper">
+        <p class="loader-text">Loading</p>
+        <div class="loader"></div>
+    </div>
+    <div id="page-container">
+        <div id="content">
+            <div class="heading">
+                <h1>Digital Privacy</h1>
+            </div>
+            <div class="section attention">
+                <h2>You need better digital privacy! Yes You!</h2>
+                <p class="small">(Especially if you are in the USA)</p>
+                <p>There is more to digital privacy than not posting your social security number online!</p>
+            </div>
+
+            <div class="section why">
+                <h2>Why?</h2>
+                <p>You should know that digital privacy is very important. It’s not just for people who want to hide things. Identity thieves will try (and succeed!) to <span class="emphasize">steal identities</span> from people on the internet, big data leaks can <span class="emphasize">reveal private personal information</span> to anyone in the world,and it is impossible to know all of the <span class="emphasize">different intentions</span> of the people on the internet.</p>
+            </div>
+
+            <div class="section how">
+                <h2>How do I protect my digital privacy?</h2>
+                <ol>
+                    <li>Secure your accounts and use a password manager to help you remember (Like LastPass)</li>
+                    <li>Get an anti-tracker extension for your browser (Like uBlock Origin)</li>
+                    <li>Update your Software and programs (When your phone or computer says "Update available", don't ignore it!)</li>
+                    <li><b style="font-family:Manrope, sans-serif;">Stop privacy-invading laws and pressure adding privacy-protection laws (How? Look Below ↓ )</b></li>
+                </ol>
+            </div>
+
+            <footer>
+                <p class="footer-txt">© 2020 John Kim</p>
+                <p class="footer-txt">Heading Photo by <a href="https://unsplash.com/@szolkin">Sergey Zolkin</a> on Unsplash</p>
+                <p class="footer-txt">This site is not sponsored, affiliated, or related with LastPass, LogMeIn Inc, uBlock Origin, or Raymond Hill.</p>
+            </footer>
+        </div>
+    </div>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+    <script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+    </script>
+    <!--GSAP-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
