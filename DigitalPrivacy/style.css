@@ -23,6 +23,9 @@
     .small{
         font-size: 20px;
     }
+    sup{
+        font-size: 20px;
+    }
 }
 
 /*Smaller size, eg Laptops*/
@@ -43,6 +46,9 @@
         font-size: 20px;
     }
     .small{
+        font-size: 20px;
+    }
+    sup{
         font-size: 20px;
     }
 }
@@ -67,6 +73,9 @@
     .small{
         font-size: 20px;
     }
+    sup{
+        font-size: 20px;
+    }
 }
 
 /*Mobile size*/
@@ -87,6 +96,9 @@
         font-size: 15px;
     }
     .small{
+        font-size: 15px;
+    }
+    sup{
         font-size: 15px;
     }
 }
@@ -117,6 +129,12 @@ h2{
 
 p{
     font-family: Manrope, sans-serif;
+}
+
+sup{
+    font-family: Montserrat;
+    text-decoration-line: none;
+    color: #fb8122;
 }
 
 ol{
