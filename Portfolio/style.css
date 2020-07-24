@@ -1,0 +1,971 @@
+* {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: inherit;
+}
+
+body, html {
+    margin:0;
+    padding:0;
+    background-color: #1D2228;
+    box-sizing: border-box;
+}
+
+/*Largest size -  Big Desktop Monitors*/
+@media screen and (min-width: 1216px) {
+    .welcome {
+        font-size: 200px;
+    }
+
+    .motto {
+        font-size: 100px;
+    }
+
+    .nationality {
+        font-size: 30px;
+        margin: 20vh 15px 15px 15px;
+        width: 85vw;
+    }
+
+    .mottoBar {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+        margin-top: 0.1vh;
+
+        font-size: 9vw;
+        right: 0;
+    }
+
+    #mottoBarFirst {
+        font-size: 9vw;
+        margin-top: 2vh;
+        margin-right: 10vw;
+
+        right: 0;
+    }
+
+    .heading {
+        font-size: 9vw;
+    }
+
+    .skillstext {
+        font-size: 30px;
+    }
+
+    .project-carousel {
+        padding: 10px 20px 20px 10px;
+    }
+
+    .carousel-image {
+        height: 380px;
+        float:left;
+    }
+
+    .carousel-textbox {
+        display: block;
+        padding-right: 10px;
+    }
+
+    .carousel-heading {
+        font-family: "Manrope", sans-serif;
+        position: relative;
+        font-size: 40px;
+        left: 10px;
+    }
+
+    .carousel-text {
+        font-family: "Manrope", sans-serif;
+        position: relative;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .carousel-titlebox {
+        display:none;
+    }
+
+    .skillsflextext {
+        max-height: 0px;
+        color: rgba(141,167,255,0);
+        transition: all 0.5s;
+    }
+
+    .flexitems:hover .skillsflextext{
+        overflow: hidden;
+        max-height: 500px;
+        color: #1D2228;
+        transition: all 0.5s;
+    }
+
+    #webdevlogos {
+        width:360px;
+    }
+    #france {
+        width: 330px;
+    }
+    #unity {
+        width:200px;
+    }
+    #scratch {
+        width: 240px;
+    }
+    #nodejs {
+        width: 280px;
+    }
+    #ski{
+        width:360px;
+    }
+    #python {
+        width: 220px;
+    }
+    #taekwondo {
+        width:200px;
+    }
+    #vex{
+        width: 350px;
+    }
+
+    .contactBtn {
+        font-size: 40px;
+        height: 60px;
+    }
+
+    .contactBtn img {
+        height: 40px;
+    }
+
+    footer {
+        font-size:15px;
+    }
+}
+
+/*Smaller size, eg Laptops*/
+@media screen and (min-width: 769px) and (max-width: 1215px) {
+    .welcome {
+        font-size: 100px;
+    }
+
+    .motto {
+        font-size: 50px;
+    }
+
+    .nationality {
+        font-size: 20px;
+        margin: 20vh 15px 15px 15px;
+        width: 85vw;
+    }
+
+    .mottoBar {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        margin-left: 0.1vw;
+        margin-right: 0.1vw;
+        margin-top: 0.1vh;
+
+        font-size: 9vw;
+
+        right: 0;
+
+    }
+
+    #mottoBarFirst {
+        font-size: 9vw;
+        margin-top: 2vh;
+        margin-right: 10vw;
+
+        right: 0;
+    }
+
+    .heading {
+        font-size: 9vw;
+    }
+
+    .skillstext {
+        font-size: 20px;
+    }
+
+    .project-carousel {
+        padding: 10px 20px 20px 10px;
+    }
+
+    .carousel-image {
+        height: 380px;
+        float:left;
+    }
+
+    .carousel-textbox {
+        display: block;
+        padding-right:10px;
+    }
+
+    .carousel-heading {
+        font-family: "Manrope", sans-serif;
+        position: relative;
+        font-size: 40px;
+        left: 10px;
+        margin-bottom:0.5em;
+        margin-top:0.5em;
+    }
+
+    .carousel-text {
+        font-family: "Manrope", sans-serif;
+        position: relative;
+        left: 10px;
+        font-size: 20px;
+    }
+
+    .carousel-titlebox {
+        display:none;
+    }
+
+    .skillsflextext {
+        max-height: 0px;
+        color: rgba(141,167,255,0);
+        transition: all 0.5s;
+    }
+
+    .flexitems:hover .skillsflextext{
+        overflow: hidden;
+        max-height: 500px;
+        color: #1D2228;
+        transition: all 0.5s;
+    }
+
+    #webdevlogos {
+        width:320px;
+    }
+    #france {
+        width: 310px;
+    }
+    #unity {
+        width:200px;
+    }
+    #scratch {
+        width: 200px;
+    }
+    #nodejs {
+        width: 270px;
+    }
+    #ski{
+        width:360px;
+    }
+    #python {
+        width: 190px;
+    }
+    #taekwondo {
+        width:150px;
+    }
+    #vex{
+        width: 300px;
+    }
+
+    .contactBtn {
+        font-size: 40px;
+        height: 60px;
+    }
+
+    .contactBtn img {
+        height: 40px;
+    }
+
+    footer {
+        font-size:15px;
+    }
+
+}
+
+/*Tablet Size*/
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .welcome {
+        font-size: 100px;
+    }
+
+    .motto {
+        font-size: 50px;
+    }
+
+    .nationality {
+        font-size: 20px;
+
+        margin: 50px 15px 15px 15px;
+
+        width: 85vw;
+    }
+
+    .mottoBar {
+        font-size: 50px;
+        margin: 0 0 0 0;
+    }
+
+    #mottoBarFirst {
+        font-size: 50px;
+        position: relative !important;
+        margin: 0 0 0 0;
+    }
+
+    .heading {
+        font-size: 50px;
+    }
+
+    .skillstext {
+        font-size: 20px;
+    }
+
+    .project-carousel {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .carousel-image {
+        height: 380px;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .carousel-textbox {
+        display: none;
+    }
+
+    .carousel-titlebox {
+        width:100%;
+        text-align: center;
+        position: absolute;
+        bottom:5px;
+    }
+
+    .carousel-titlebox p{
+        font-family: "Manrope", sans-serif;
+        font-size: 30px;
+        margin:0 0 0 0;
+        /*Color is controlled from html on per item basis*/
+    }
+
+    .skillsflextext {
+        max-height: 0px;
+        color: rgba(141,167,255,0);
+        transition: all 0.5s;
+    }
+
+    .flexitems:hover .skillsflextext{
+        overflow: hidden;
+        max-height: 500px;
+        color: #1D2228;
+        transition: all 0.5s;
+    }
+
+
+    #webdevlogos {
+        width:160px;
+    }
+    #france {
+        width: 150px;
+    }
+    #unity {
+        width:120px;
+    }
+    #scratch {
+        width: 100px;
+    }
+    #nodejs {
+        width: 130px;
+    }
+    #ski{
+        width:150px;
+    }
+    #python {
+        width: 100px;
+    }
+    #taekwondo {
+        width:80px;
+    }
+    #vex{
+        width: 150px;
+    }
+
+    .contactBtn {
+        font-size: 25px;
+        height: 40px;
+    }
+
+    .contactBtn img {
+        height: 25px;
+    }
+
+    footer {
+        font-size:12px;
+    }
+}
+
+/*Mobile size*/
+@media screen and (max-width: 425px) {
+    .welcome {
+        font-size: 90px;
+    }
+
+    .motto {
+        font-size: 50px;
+    }
+
+    .nationality {
+        font-size: 20px;
+
+        margin: 50px 15px 15px 15px;
+
+        width: 85vw;
+    }
+
+    .mottoBar {
+        font-size: 35px;
+        margin: 0 0 0 0;
+    }
+
+    #mottoBarFirst {
+        font-size: 35px;
+        position: relative !important;
+        margin: 0 0 0 0;
+    }
+
+    .heading {
+        font-size: 35px;
+    }
+
+    .skillstext {
+        font-size: 20px;
+    }
+
+    .project-carousel {
+        padding: 10px 10px 20px 10px;
+    }
+
+    .carousel-image {
+        object-fit: scale-down;
+        width: 100%;
+        display: block;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .carousel-textbox {
+        display: none;
+    }
+
+    .carousel-titlebox {
+        width:100%;
+        text-align: center;
+        position: absolute;
+        bottom:5px;
+    }
+
+    .carousel-titlebox p{
+        font-family: "Manrope", sans-serif;
+        font-size: 30px;
+        margin:0 0 0 0;
+        /*Color is controlled here, and is given a background color so it looks good on all screens*/
+        color: #E1E2E2 !important;
+        background: rgba(29, 34, 40, 0.50);
+    }
+
+    .skillsflextext {
+        max-height: 0px;
+        color: rgba(141,167,255,0);
+        transition: all 0.5s;
+    }
+
+    .flexitems:hover .skillsflextext{
+        overflow: hidden;
+        max-height: 500px;
+        color: #1D2228;
+        transition: all 0.5s;
+    }
+
+    #webdevlogos {
+        width:160px;
+    }
+    #france {
+        width: 150px;
+    }
+    #unity {
+        width:120px;
+    }
+    #scratch {
+        width: 100px;
+    }
+    #nodejs {
+        width: 130px;
+    }
+    #ski{
+        width:150px;
+    }
+    #python {
+        width: 100px;
+    }
+    #taekwondo {
+        width:80px;
+    }
+    #vex{
+        width: 150px;
+    }
+
+    .contactBtn {
+        font-size: 20px;
+        height: 35px;
+    }
+
+    .contactBtn img {
+        height: 20px;
+    }
+
+    footer {
+        font-size:10px;
+    }
+}
+
+/**********
+BEGIN NAV
+ *********/
+
+.navButtonContainer {
+    position: fixed;
+    top: 0;
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 9px 5px 9px 5px;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #FB8122;
+    border-radius: 50%;
+
+    z-index: 2001;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 6px;
+}
+
+.navMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.navMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.navMenu a:hover {
+    color: #f1f1f1;
+}
+
+/*END NAV*/
+
+.oldPortfolio {
+    margin-top: 15px;
+    margin-right: 15px;
+    font-size: 13px;
+    position: fixed;
+    z-index: -1;
+    top:0;
+    right:0;
+    color: #818181;
+    text-decoration: none;
+}
+
+.welcomebox {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    height:100%;
+    width: 100%;
+    box-sizing: border-box;
+
+    z-index: -1;
+
+    background-image: linear-gradient(rgba(29, 34, 40, 0.8), rgba(29, 34, 40, 0.8)), url("img/banner.jpg");
+    background-color: #1D2228;
+    background-position: 50% 83%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.welcometextwrapper {
+    width:100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*Bouncing Arrow*/
+.helperWrapper {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height:40px;
+    bottom: 5px;
+    justify-content: center;
+    z-index: -1;
+}
+
+.round {
+    font-size:12px;
+    transform: rotate(90deg);
+    position: absolute;
+    border: 2px solid #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+#cta{
+    width:100%;
+    position: absolute;
+}
+#cta .arrow{
+    left: 30%;
+}
+.arrow {
+    position: absolute;
+    bottom: 0;
+    margin-left:0px;
+    width: 12px;
+    height: 12px;
+    background-size: contain;
+    top:12px;
+}
+.segunda{
+    margin-left: 8px;
+}
+.next {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiI+PHN0eWxlPi5zdDB7ZmlsbDojZmZmfTwvc3R5bGU+PHBhdGggY2xhc3M9InN0MCIgZD0iTTMxOS4xIDIxN2MyMC4yIDIwLjIgMTkuOSA1My4yLS42IDczLjdzLTUzLjUgMjAuOC03My43LjZsLTE5MC0xOTBjLTIwLjEtMjAuMi0xOS44LTUzLjIuNy03My43UzEwOSA2LjggMTI5LjEgMjdsMTkwIDE5MHoiLz48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMzE5LjEgMjkwLjVjMjAuMi0yMC4yIDE5LjktNTMuMi0uNi03My43cy01My41LTIwLjgtNzMuNy0uNmwtMTkwIDE5MGMtMjAuMiAyMC4yLTE5LjkgNTMuMi42IDczLjdzNTMuNSAyMC44IDczLjcuNmwxOTAtMTkweiIvPjwvc3ZnPg==);
+}
+
+@keyframes bounceAlpha {
+    0% {opacity: 1; transform: translateX(0px) scale(1);}
+    25%{opacity: 0; transform:translateX(10px) scale(0.9);}
+    26%{opacity: 0; transform:translateX(-10px) scale(0.9);}
+    55% {opacity: 1; transform: translateX(0px) scale(1);}
+}
+
+.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.arrow.primera.bounceAlpha {
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.round .arrow{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+.round .arrow.primera{
+    animation-name: bounceAlpha;
+    animation-duration:1.4s;
+    animation-delay:0.2s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+/*Bouncing Arrow end*/
+
+.box {
+    margin: auto;
+    width: 98vw;
+    background-color: #e1e2e2;
+    display: table;
+
+    z-index: 9;
+
+    /*This is here so it creates a new stacking context and covers the welcome text*/
+    transform: scale(1);
+}
+
+.mottoContainer {
+    margin-top: 100vh;
+    height: 98vh;
+    box-sizing: border-box;
+}
+
+.motto {
+    color: #1D2228;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Manrope", sans-serif;
+
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    z-index: 9;
+    box-sizing: border-box;
+}
+
+.mottoWords {
+    display: inline-block;
+}
+
+#mottoBarFirst {
+    color: #e1e2e2;
+
+    position: absolute;
+
+    z-index: 1000;
+}
+
+.mottoBar {
+    color: #e1e2e2;
+
+    position: absolute;
+
+    z-index: 1000;
+}
+
+.nationality {
+    color: #e1e2e2;
+    font-family: "Manrope", sans-serif;
+
+    display: inline-block;
+
+    z-index: 9;
+}
+
+.nationalityContainer {
+    margin-top: 15px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0), #1D2228), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/WorldMapPortfolio.png");
+    background-color: #00adfd;
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width: 100%;
+}
+
+.welcome {
+    font-family: 'Manrope', sans-serif;
+    color: #E1E2E2;
+    font-weight: bold;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    text-align: center;
+    position: relative;
+
+    z-index: 0;
+}
+
+.heading {
+    color: #e1e2e2;
+
+    z-index: 1000;
+}
+
+.skillstext {
+    font-family: "Manrope", sans-serif;
+    color: #E1E2E2;
+    margin-left: 15px;
+}
+
+/*Main Flexbox to shape all of the skill boxes*/
+.skillsflexbox {
+    display: flex;
+    width: 100%;
+    background-color: #1D2228;
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+/*The actual skill boxes in main flexbox*/
+.flexitems {
+    border: solid 5px black;
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    flex-grow: 1;
+}
+
+/*Mini flex box so skill description text matches image width.*/
+.skillsitemwrapper{
+    display: flex;
+    bottom: 0;
+    text-align: center;
+}
+
+.skillsflextext{
+    color: rgba(255,255,255,0);
+    font-family: "Manrope", sans-serif;
+    flex-grow: 1;
+    width:0;
+}
+
+.flexitems img{
+    display: block;
+    margin:auto;
+}
+
+.lifeskill {
+    background-color: #96ff93;
+}
+
+.codeskill {
+    background-color: #8da7ff;
+}
+
+.contactBtnWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.contactBtn  {
+    margin: 5px 5px 1em 5px;
+    padding: 5px 5px 5px 5px;
+    background-color: #fb8122;
+    border: solid 3px #111111;
+    border-radius: 3px;
+}
+
+.contactBtn:hover {
+    background-color: #ffa45e;
+}
+
+.contactBtn a {
+    color: #1D2228;
+    text-decoration: none;
+}
+
+footer {
+    padding:5px 5px 5px 5px;
+    color: #E1E2E2;
+    font-family: "Manrope", sans-serif;
+}
+
+/*Styling for Flickity carousel*/
+.project-carousel {
+    margin:auto;
+    height: 400px;
+    width: 90%;
+    background: #EEE;
+    border-radius: 25px;
+    box-sizing: border-box;
+    /*Padding in media queries*/
+}
+
+.carousel-cell {
+    width: 100%; /* full width */
+    height: 100%; /* height of carousel */
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.ageAtProject {
+    background-color: rgba(29, 34, 40, 0.50);
+    font-family: "Manrope", sans-serif;
+    color: #E1E2E2;
+    position: absolute;
+    left:15px;
+}
+
+.carousel-image {
+    margin: 10px 10px 10px 10px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+/* no circle */
+.flickity-button {
+    background: transparent !important;
+}
+
+/* icon color */
+.flickity-button-icon {
+    fill: white;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+    bottom: 0px !important;
+
+}
+
+/* white circles */
+.flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+}
+
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+    background: #FB8122;
+}
+
+
+/*Special Styling for the words in the motto*/
+#motto2 {
+    color: #00cdd1;
+}
+
+#motto3 {
+    color: #00cdd1;
+}
+
+#motto8 {
+    color: #FB8122;
+}
+
+/*START OF PRELOADER*/
+.loader-wrapper{
+    width:100%;
+    height:100%;
+    z-index: 9999;
+    position:fixed;
+    left:0;
+    top: 0;
+    background-color: #111111;
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+}
+.loader {
+    background: #fb8122;
+    height: 3em;
+    width: 3em;
+    margin: 50vh auto;
+    animation: loadit 4s linear infinite;
+}
+
+@keyframes loadit {
+    55% {
+        background: rgba(251,129,34,0.4);
+        border-radius: 100%;
+        transform: rotate(360deg);
+        box-shadow: 7em 0 0 rgba(251,129,34,0.3),-7em 0 0 rgba(251,129,34,0.3),3em 0 0 rgba(251,129,34,0.3),-3em 0 0 rgba(251,129,34,0.3),0 7em 0 rgba(251,129,34,0.3),0 -7em 0 rgba(251,129,34,0.3),0 3em 0 rgba(251,129,34,0.3),0 -3em 0 rgba(251,129,34,0.3);
+    }
+}
+/*END OF PRELOADER*/
