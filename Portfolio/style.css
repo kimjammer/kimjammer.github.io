@@ -123,6 +123,9 @@ body, html {
     #taekwondo {
         width:200px;
     }
+    #korean{
+        width: 200px;
+    }
     #vex{
         width: 350px;
     }
@@ -257,6 +260,9 @@ body, html {
     #taekwondo {
         width:150px;
     }
+    #korean{
+        width: 150px;
+    }
     #vex{
         width: 300px;
     }
@@ -379,6 +385,9 @@ body, html {
     }
     #taekwondo {
         width:80px;
+    }
+    #korean{
+        width: 80px;
     }
     #vex{
         width: 150px;
@@ -503,6 +512,9 @@ body, html {
     }
     #taekwondo {
         width:80px;
+    }
+    #korean{
+        width: 80px;
     }
     #vex{
         width: 150px;
@@ -839,6 +851,7 @@ BEGIN NAV
 .contactBtnWrapper {
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .contactBtn  {
