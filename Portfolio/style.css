@@ -588,18 +588,6 @@ BEGIN NAV
 
 /*END NAV*/
 
-.oldPortfolio {
-    margin-top: 15px;
-    margin-right: 15px;
-    font-size: 13px;
-    position: fixed;
-    z-index: -1;
-    top:0;
-    right:0;
-    color: #818181;
-    text-decoration: none;
-}
-
 .welcomebox {
     position: fixed;
     top: 50%;
@@ -869,6 +857,11 @@ BEGIN NAV
 .contactBtn a {
     color: #1D2228;
     text-decoration: none;
+}
+
+#bottom-spacer {
+    width: 100%;
+    height: 100px;
 }
 
 footer {
