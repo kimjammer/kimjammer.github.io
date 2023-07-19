@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+    <defs>
+        <style>.cls-1{fill:#edf5ff;}.cls-2{fill:#596be3;}.cls-3{clip-path:url(#clippath);}.cls-4{fill:#2e3d9e;}.cls-5{fill:none;}</style>
+        <clipPath id="clippath"><rect class="cls-5" y="0" width="500" height="500" rx="73.55" ry="73.55"/></clipPath>
+    </defs>
+    <rect class="cls-2" width="500" height="500" rx="73.55" ry="73.55"/>
+    <g class="cls-3">
+        <polygon class="cls-4" points="500 222.92 500 500 246.98 500 99.78 352.79 104.7 347.87 104.7 241.04 127.53 224.16 132.23 106.37 197.95 172.09 286.83 106.37 378.18 197.72 383.45 106.37 500 222.92"/>
+    </g>
+    <path class="cls-1" d="m173.79,226.31l-41.56,42v84.44h-32.45V106.37h32.45v121.32l119.23-121.32h35.37v2.76l-91.52,94.09,95.53,146.78v2.75h-35l-82.05-126.44Z"/>
+    <path class="cls-1" d="m338.6,409.32c-10.94,5.17-24.06,6.89-36.1,6.89-6.09.07-12.15-.98-17.86-3.1l5.83-24.47c10.21,2.75,26.26.34,37.92-4.83,18.23-9,22.25-32.74,22.25-52V106.37h32.81v230.23c0,28.6-17.87,59.96-44.85,72.72Z"/>
+</svg>
