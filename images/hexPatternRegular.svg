@@ -1,0 +1,17 @@
+<svg version="1.1" width="202.072594216" height="350" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="polka-dots" x="0" y="0" width="202.072594216" height="350" patternUnits="userSpaceOnUse">
+            <circle fill="#272727" cx="0" cy="0" r="50">
+            </circle>
+            <circle fill="#272727" cx="202.072594216" cy="0" r="50">
+            </circle>
+            <circle fill="#272727" cx="101.036297108" cy="175" r="50">
+            </circle>
+            <circle fill="#272727" cx="0" cy="350" r="50">
+            </circle>
+            <circle fill="#272727" cx="202.072594216" cy="350" r="50">
+            </circle>
+        </pattern>
+    </defs>
+    <rect x="0" y="0" width="100%" height="350" fill="url(#polka-dots)"/>
+</svg>
