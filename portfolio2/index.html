@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>John's Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="icon" href="img/logo.png" type="image">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="John Kim's Portfolio, also known as KimJammer.">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<div class="loader-wrapper">
+		<div class="loader"></div>
+	</div>
+	<div class="navButtonContainer" onclick="navBtnClick();" role="button">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<div class="navMenu" id="navMenu">
+		<!--When any of the links are pressed, pretend the nav X button was pressed and close the nav.-->
+		<a class="navLink" role="button" href="#aboutMe" onclick="navBtnClick();">About Me</a>
+		<a class="navLink" role="button" href="#projects" onclick="navBtnClick();">Projects</a>
+		<a class="navLink" role="button" href="#skills" onclick="navBtnClick();">Skills</a>
+		<a class="navLink" role="button" href="#contact" onclick="navBtnClick();">Contact Me</a>
+	</div>
+
+
+	<div class="welcomebox">
+		<div class="welcometextwrapper">
+			<p class="welcome">Hey There,</p>
+			<p class="welcome">I'm John Kim</p>
+		</div>>
+	</div>
+	<div class="helperWrapper">
+		<div class="round">
+			<div id="cta">
+				<span class="arrow primera next "></span>
+				<span class="arrow segunda next "></span>
+			</div>
+		</div>
+	</div>
+	<div class="mottoContainer box" id="aboutMe">
+		<p class="motto"><span class="mottoWords" id="motto1">An</span> <span class="mottoWords" id="motto2">International,</span> <span class="mottoWords" id="motto3">Intercultural</span> <span class="mottoWords" id="motto4">young</span> <span class="mottoWords" id="motto5">adult</span> <span class="mottoWords" id="motto6">with</span> <span class="mottoWords" id="motto7">a</span> <span class="mottoWords" id="motto8">fervent</span> <span class="mottoWords" id="motto9">love</span> <span class="mottoWords" id="motto10">for</span> <span class="mottoWords" id="motto11">Computer</span> <span class="mottoWords" id="motto12">Science</span></p>
+	</div>
+	<div class="nationalityContainer">
+		<div>
+			<p id="mottoBarFirst">International</p>
+			<p class="mottoBar">Intercultural</p>
+		</div>
+		<p class="nationality">Hello, I'm John Kim. Currently, I'm a senior in high school. I was born in Delaware, USA, then my family moved to Italy, and I got to live in Saudi Arabia for my elementary school years. There, I discovered my love for coding. I spent Middle School in Montana, USA, and now I've moved again to Indiana. I love kittens, gadgets, and skiing.</p>
+	</div>
+	<div>
+		<p class="heading" id="projects">Computer Science</p>
+		<div class="project-carousel" data-flickity='{ "cellAlign": "left", "contain": true , "wrapAround":true, "autoPlay": true}'>
+			<div class="carousel-cell">
+				<p class="ageAtProject">Created when I was 15 years old</p>
+				<img class="carousel-image" src="img/Evading It.png" alt="Icon for the Evading It app."/>
+				<div class="carousel-textbox">
+					<p class="carousel-heading">Evading It!</p>
+					<p class="carousel-text">Evading It! is an android game I created in Unity with creative input from some of my friends. Check it out here: <a href="https://play.google.com/store/apps/details?id=io.github.kimjammer.EvadingIt" target="_blank">Google Play Store Page</a></p>
+				</div>
+				<div class="carousel-titlebox">
+					<p style="color:#e1e2e2">Evading It!</p>
+				</div>
+			</div>
+			<div class="carousel-cell">
+				<p class="ageAtProject">Created when I was 14 years old</p>
+				<img class="carousel-image" src="img/Diri.png" alt="Icon for the Diri bot."/>
+				<div class="carousel-textbox">
+					<p class="carousel-heading">Diri</p>
+					<p class="carousel-text">Diri is a Discord bot that can keep track of users' point, provide space and Mars pictures from NASA, and relay queries to wolfram alpha to answer questions. Check out its webpage here: <a href="https://diri-robot.web.app/" target="_blank">Diri's Website</a></p>
+				</div>
+				<div class="carousel-titlebox">
+					<p style="color:#818181;">Diri</p>
+				</div>
+			</div>
+			<div class="carousel-cell">
+				<p class="ageAtProject">Created when I was 15 years old</p>
+				<img class="carousel-image" src="img/logo.png" alt="Icon for myself, KimJammer."/>
+				<div class="carousel-textbox">
+					<p class="carousel-heading">Portfolio</p>
+					<p class="carousel-text">I created this portfolio from scratch! That should give some idea of my web development skills. If you forgot the URL, here it is: <a href="https://kimjammer.github.io">kimjammer.github.io</a></p>
+				</div>
+				<div class="carousel-titlebox">
+					<p style="color:#1D2228;">Portfolio</p>
+				</div>
+			</div>
+			<div class="carousel-cell">
+				<p class="ageAtProject">Created when I was 15 years old</p>
+				<img class="carousel-image" src="img/appiguesslogo.png" alt="Icon for App, I Guess, an app."/>
+				<div class="carousel-textbox">
+					<p class="carousel-heading">App, I Guess</p>
+					<p class="carousel-text"> App, I Guess is a hybrid app that pretends to be a Q&A app, but it's actually a peer-to-peer warning system for dangers in the school. I created it when the school shootings were big news. Web version here: <a href="https://app-i-guess.glitch.me/" target="_blank">App I Guess</a></p>
+				</div>
+				<div class="carousel-titlebox">
+					<p style="color:#818181;">App, I Guess</p>
+				</div>
+			</div>
+			<div class="carousel-cell">
+				<p class="ageAtProject">Created when I was 13 years old</p>
+				<img class="carousel-image" src="img/vexlogo.jpeg" alt="Logo of the 2019 Vex Robotics Championships."/>
+				<div class="carousel-textbox">
+					<p class="carousel-heading">Vex Robot</p>
+					<p class="carousel-text"> Our team made a Vex Robot for competition in middle school. We got first place in our division of the Montana State Championships and went to the World Championships! Here is a video of us there: <a href="https://www.youtube.com/watch?v=V1sUOWv4Aq4" target="_blank">Youtube Video</a> (I'm on team 451X (blue) & 2nd from right) </p>
+				</div>
+				<div class="carousel-titlebox">
+					<p style="color:#818181;">App I Guess</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<p id="skills" class="heading">Skills</p>
+		<p class="skillstext">Over the years, I've experienced many things and gained many skills. Here they all are.</p>
+		<div class="skillsflexbox">
+			<div class="flexitems lifeskill">
+				<img id="france" src="img/france.png" alt="Flag of France.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">Le français! Parlez-vous français?</p>
+				</div>
+			</div>
+			<div class="flexitems codeskill">
+				<img id="webdevlogos" src="img/webdevlogos.png" alt="Icons of HTML, Javascript, and CSS.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">The web development bundle! (Javascript, html, & CSS)</p>
+				</div>
+			</div>
+			<div class="flexitems lifeskill">
+				<img id="scratch" src="img/scratch.svg" alt="The scratch cat.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">Game Development in blocks through Scratch. We all begin somewhere -- MEOW!</p>
+				</div>
+			</div>
+			<div class="flexitems codeskill">
+				<img id="unity" src="img/unityLogo.png" alt="Logo of Unity.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">Game Development in C# through the Unity Engine</p>
+				</div>
+			</div>
+			<div class="flexitems lifeskill">
+				<img id="ski" src="img/ski.png" alt="Picture of me skiing.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">How to ski - gotta shred that powder on the mountains!</p>
+				</div>
+			</div>
+			<div class="flexitems codeskill">
+				<img id="nodejs" src="img/nodejs.png" alt="Logo for Node.js.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">Basic Database and Backend work with Node.js and SQLite using better-sqlite3</p>
+				</div>
+			</div>
+			<div class="flexitems lifeskill">
+				<img id="taekwondo" src="img/taekwondo.png" alt="Icon depicting taekwondo.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">Taekwondo, I have a 2nd degree black belt!</p>
+				</div>
+			</div>
+			<div class="flexitems codeskill">
+				<img id="python" src="img/python.png" alt="The Python logo.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">Python 2.7 and 3, learned via high school class</p>
+				</div>
+			</div>
+			<div class="flexitems lifeskill">
+				<img id="korean" src="img/kingrabbit.png" alt="Logo of King Rabbit with the flag of Korea.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">I am also the Korean translator for the King Rabbit game!</p>
+				</div>
+			</div>
+			<div class="flexitems codeskill">
+				<img id="vex" src="img/vex.png" alt="Logo of Vex Robotics.">
+				<div class="skillsitemwrapper">
+					<p class="skillsflextext">Last, but not least, robotics in C and C++ thanks to Vex Robotics and their overpriced materials.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="contact" class="contact">
+		<p class="heading">Contact Me</p>
+		<div class="contactBtnWrapper">
+			<span class="contactBtn github-button" role="button"><a href="https://github.com/kimjammer" target="_blank"><img src="img/githubicon.png" alt="Github Logo">Github Profile</a></span>
+			<span class="contactBtn email" role="button"><a href="mailto:contact@kjam.anonaddy.com"><img src="img/emailicon.png" alt="Email Icon">Email</a></span>
+			<span class="contactBtn discord" role="button"><a href="https://discord.com/users/424546246980665344" target="_blank"><img src="img/discordicon.png" alt="Discord Icon">Discord</a></span>
+			<span class="contactBtn pgp" role="button"><a href="../misc/PGP.txt"><img src="img/lockicon.png" alt="Lock Icon">PGP Key</a></span>
+		</div>
+	</div>
+
+	<div id="bottom-spacer">
+
+	</div>
+
+	<footer>
+		© John Kim 2022. All Logos and Trademarks belong to their respective owners. See Licenses page <a href="Licenses.html" target="_blank">here</a> for details.
+	</footer>
+
+	<!--jQuery (for scroll magic)-->
+	<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+	<script>
+		$(window).on("load",function(){
+			$(".loader-wrapper").fadeOut("slow");
+		});
+	</script>
+
+	<!--Flickity-->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<!--GSAP-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+	<!--ScrollMagic-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+
+	<!--Scripts using GSAP go below here-->
+	<script src="js/main.js"></script>
+</body>
+</html>
